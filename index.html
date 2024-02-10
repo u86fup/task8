@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task8</title>
+	
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	
+	<link rel="stylesheet" href="style8.css">
+</head>
+
+<body>
+	<header>
+		<h3>Chang Color</h3>
+		<button class="black"></button>
+		<button class="blue"></button>
+	</header>
+	
+	<section class="sidebar">
+		<div class="burger"><img src="img/icon_burger_w.svg" alt="burger"></div>
+	</section>
+	
+	<section class="third">
+		
+		<i id="leftarrow" class="fas fa-chevron-left" style="color: white;"></i>
+		
+		<div class="search_bg">
+			<p class="search">
+			<img src="img/icon_search.svg" alt="pic">
+			</p>
+		</div>
+		
+		<div class="type">
+			<div id="yt" class="text">ALL</div>
+			<div class="text">Type1</div>
+			<div class="text">Type2</div>
+			<div class="text">Type3</div>
+			<div class="text">Type1</div>
+			<div class="text">Type2</div>
+			<div class="text">Type3</div>
+		</div>
+		
+		<i id="rightarrow" class="fas fa-chevron-right" style="color: white;"></i>
+	
+	</section>
+	
+	
+	
+	<div class="list">
+		<div class="x">
+			<i class="fas fa-times" style="color: white;"></i>
+		</div>
+		
+		<p><a href="#"><img src="img/icon_home_w.svg" alt="pen">&nbsp; Home</a></p>
+		<p><a href="#"><img src="img/icon_info_w.svg" alt="pen">&nbsp; About</a></p>
+		<p><a href="#"><img src="img/icon_pen_w.svg" alt="pen">&nbsp; Post1</a></p>
+		<p><a href="#"><img src="img/icon_pen_w.svg" alt="pen">&nbsp; Post2</a></p>
+		<p><a href="#"><img src="img/icon_pen_w.svg" alt="pen">&nbsp; Post3</a></p>
+	</div>
+
+	<section class="abc">
+		<div>
+			<p>A</p>
+			<p>C</p>
+			<p>E</p>
+			<p>G</p>
+			<p>I</p>
+		</div>
+		
+		<div>
+			<p>B</p>
+			<p>D</p>
+			<p>F</p>
+			<p>H</p>
+			<p>J</p>
+		</div>
+	</section>
+	
+	<footer></footer>
+	
+	
+	<div :class="color">
+	
+		
+		
+	</div>
+	
+<script setup lang="ts">
+const color = ref('black');
+const changeColor = (value: string) => {
+  color.value = value;
+}
+</script>
+	
+</body>
+</html>
